@@ -1,1 +1,1 @@
-# codewars
+# codewarsrepository for codewars tasks
