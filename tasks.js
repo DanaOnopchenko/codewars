@@ -84,11 +84,94 @@
 
 // Напиши скрипт який перевіряє чи закінчується значення змінної link символом /. Якщо ні, додай до кінця значення link цей символ
 
-let link = 'https://somesite.com/about';
+// let link = 'https://somesite.com/about';
 
-if (link.endsWith("/") === false) { 
-    console.log(link + '/')
-}
+// if (link.endsWith("/") === false) {
+//     console.log(link + '/')
+// }
 // console.log(link.endsWith("/"));
 
 
+
+// Напиши скрипт для відображення часу дедлайн здачі проекту. Використовуй конструкцію if...else.
+
+// Якщо до дедлайну 0 днів - виведи рядок "Сьогодні"
+// Якщо до дедлайну 1 день - виведи рядок "Завтра"
+// Якщо до дедлайну 2 дні - виведи рядок "Післязавтра"
+// Якщо до дедлайну 3+ днів - виведи рядок "Дата в майбутньому"
+
+// const days = Number (prompt("enter days"));
+// console.log(days)
+
+
+// if (days === 0) {
+//     console.log("Сьогодні")
+// } else if (days === 1) {
+//     console.log("Завтра")
+// } else if (days === 2) {
+//     console.log("Післязавтра")
+// } else {
+//     console.log("Дата в майбутньому")
+// }
+
+
+
+// Напиши цикл for який виводить у консоль браузера числа за зростанням від min до max, але якщо число кратне 5.
+// const max = 100;
+// const min = 20;
+
+
+// for (let i = min; i <= max; i += 1) {
+//     // / оператор ділення
+//     // % оператор залишку від ділення
+//     if (i % 5 === 0) {
+//         console.log(i);
+//     }
+
+// }
+
+// const color = prompt('Enter color').toLowerCase()
+
+// switch (color) {
+//     case "red":
+//         alert("STOP!");
+//         break;
+//     case "yellow":
+//         alert("Atention");
+//         break;
+//     case 'green':
+//         alert("Go!");
+//         break;
+//     default:
+//         alert("i am sorry(")
+// }
+
+// if (color === "red") {
+//     console.log('Stop!');
+// } else if (color === "yellow") {
+//     console.log("Atention...")
+// } else if (color === "green") {
+//     console.log("Go!")
+// } else {
+//     console.log('I am sorry')
+// }
+
+function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+  // Change code below this line
+    const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
+    const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
+
+  // Change code above this line
+  return message;
+}
+
+// Оголошена функція makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee)
+// Виклик makeOrderMessage(2, 100, 50) повертає "You ordered droids worth 250 credits. Delivery (50 credits) is included in total price."
+// Виклик makeOrderMessage(4, 300, 100) повертає "You ordered droids worth 1300 credits. Delivery (100 credits) is included in total price."
+// Виклик makeOrderMessage(10, 70, 200) повертає "You ordered droids worth 900 credits. Delivery (200 credits) is included in total price."
+
+
+
+console.log(makeOrderMessage(2, 100, 50));
+console.log(makeOrderMessage(4, 300, 100));
+console.log(makeOrderMessage(10, 70, 200));
