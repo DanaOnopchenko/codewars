@@ -156,22 +156,28 @@
 //     console.log('I am sorry')
 // }
 
-function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+function checkStorage(available, ordered) {
+  let message;
   // Change code below this line
-    const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
-    const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
+
+  message = ordered > available ? "Not enough goods in stock!" : "The order is accepted, our manager will contact you"
+  // if (ordered > available) {
+  //   message = "Not enough goods in stock!";
+  // } else {
+  //   message = "The order is accepted, our manager will contact you";
+  // }
 
   // Change code above this line
   return message;
 }
 
-// Оголошена функція makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee)
-// Виклик makeOrderMessage(2, 100, 50) повертає "You ordered droids worth 250 credits. Delivery (50 credits) is included in total price."
-// Виклик makeOrderMessage(4, 300, 100) повертає "You ordered droids worth 1300 credits. Delivery (100 credits) is included in total price."
-// Виклик makeOrderMessage(10, 70, 200) повертає "You ordered droids worth 900 credits. Delivery (200 credits) is included in total price."
+console.log(checkStorage(100, 130));
+// Виконай рефакторинг рішення задачі «Склад товарів», замінивши інструкцію if...else тернарним оператором.
 
-
-
-console.log(makeOrderMessage(2, 100, 50));
-console.log(makeOrderMessage(4, 300, 100));
-console.log(makeOrderMessage(10, 70, 200));
+// Оголошена функція checkStorage(available, ordered).
+// Використаний тернарний оператор.
+// Виклик checkStorage(100, 50) повертає "The order is accepted, our manager will contact you"
+// Виклик checkStorage(100, 130) повертає "Not enough goods in stock!"
+// Виклик checkStorage(200, 20) повертає "The order is accepted, our manager will contact you"
+// Виклик checkStorage(200, 150) повертає "The order is accepted, our manager will contact you"
+// Виклик checkStorage(150, 180) повертає "Not enough goods in stock!"
