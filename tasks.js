@@ -155,29 +155,16 @@
 // } else {
 //     console.log('I am sorry')
 // }
+// let number;
+// if (number % 2 === 0) {
+//   console.log("even")
+// } else {
+//   console.log("not even");
+// }
+// number = 7;
 
-
-function checkForSpam(message) {
-  let result;
-  // Change code below this line
- 
-result= message.toLocaleLowerCase().includes("spam") || message.toLocaleLowerCase().includes("sale")
-  // Change code above this line
-  return result;
+function getAge(inputString){
+return Number.parseInt(inputString)
 }
 
-console.log(checkForSpam("Amazing SalE, only tonight!"));
-// Функція checkForSpam(message) приймає рядок (параметр message), перевіряє його на вміст заборонених слів spam і sale, і повертає результат перевірки. Слова в рядку параметра message можуть бути у довільному регістрі, наприклад SPAM або sAlE.
-
-// Якщо знайшли заборонене слово (spam або sale) то функція повертає буль true.
-// Якщо в рядку відсутні заборонені слова, функція повертає буль false.
-
-// Оголошена функція checkForSpam(message).
-// Виклик функції checkForSpam("Latest technology news") повертає false
-// Виклик функції checkForSpam("JavaScript weekly newsletter")повертає false
-// Виклик функції checkForSpam("Get best sale offers now!") повертає true
-// Виклик функції checkForSpam("Amazing SalE, only tonight!") повертає true
-// Виклик функції checkForSpam("Trust me, this is not a spam message") повертає true
-// Виклик функції checkForSpam("Get rid of sPaM emails. Our book in on sale!") повертає true
-// Виклик функції checkForSpam("[SPAM] How to earn fast money?") повертає true
-
+console.log(getAge("24 years"));
