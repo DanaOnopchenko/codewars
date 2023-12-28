@@ -170,17 +170,17 @@
 // console.log(getAge("24 years"));
 
 
-function peopleWithAgeDrink(old) {
-    let message
-    if (old <= 14) {
-        message = 'Kids drink toddy.'
-    } else if (old <= 18) {
-        message = 'Teens drink coke.'
-    } else if (old <= 21) {
-        message = 'Young adults drink beer.'
-    } else { 
-        message = 'Adults drink whisky.'
-    }
-  return message;
-};
-console.log(peopleWithAgeDrink(19));
+// function peopleWithAgeDrink(old) {
+//     let message
+//     if (old <= 14) {
+//         message = 'Kids drink toddy.'
+//     } else if (old <= 18) {
+//         message = 'Teens drink coke.'
+//     } else if (old <= 21) {
+//         message = 'Young adults drink beer.'
+//     } else {
+//         message = 'Adults drink whisky.'
+//     }
+//   return message;
+// };
+// console.log(peopleWithAgeDrink(19));
