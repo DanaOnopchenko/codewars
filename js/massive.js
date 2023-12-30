@@ -106,6 +106,12 @@ const cart = [54, 28, 105, 70, 92, 17, 120,12,96];
  */
 
 const numbers = [51, 18, 13, 24, 7, 85, 19];
+let smaliesNumber = numbers[0];
+for (const number of numbers) { 
+    
+    if (number < smaliesNumber) { 
+        smaliesNumber = number;
+    }
+}
 
-
-// console.log(numbers[i]);
+console.log(smaliesNumber);
