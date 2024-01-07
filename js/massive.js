@@ -255,13 +255,13 @@ const cards = [
  */
 
 
-const cardToUpdate = 'Карточка-4';
+// const cardToUpdate = 'Карточка-4';
 
+
+// // const index = cards.indexOf(cardToUpdate);
 
 // const index = cards.indexOf(cardToUpdate);
+// console.log(index)
+// cards.splice(index,1,"updatecard")
 
-const index = cards.indexOf(cardToUpdate);
-console.log(index)
-cards.splice(index,1,"updatecard")
-
-console.table(cards);
+// console.table(cards);
