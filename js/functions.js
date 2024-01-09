@@ -72,21 +72,139 @@
  * - Если нашли логин, вывести сообщение 'Пользователь [логин] найден.'
  */
 
-const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3m4n'];
+// const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3m4n'];
 
 
-const findLogin = function (allLogins, loginToFind) { 
+// const findLogin = function (allLogins, loginToFind) {
   
-   for (const login of allLogins) { 
-    if (login === loginToFind) { 
-     return `Пользователь ${loginToFind} найден.`;
-    }
-     }
-  return `Пользователь ${loginToFind} не найден.`
+//    for (const login of allLogins) {
+//     if (login === loginToFind) {
+//      return `Пользователь ${loginToFind} найден.`;
+//     }
+//      }
+//   return `Пользователь ${loginToFind} не найден.`
+// }
+
+
+// console.log(findLogin(logins, 'avocod3r'));
+// console.log(findLogin(logins, 'k1widab3st'));
+// console.log(findLogin(logins, 'jam4l'));
+// console.log(findLogin(logins, 'poly1scute'));
+
+// Task 5
+
+/*
+ * Напиши функцию findSmallesNumber(numbers) для поиска самого маленького числа в массиве,
+ * при условии что числа уникальные (не повторяются).
+ */
+
+
+// const findSmallesNumber = function (numbers) {
+//    let smaliesNumber = numbers[0];
+//    for (const number of numbers) {
+//       if (number < smaliesNumber) {
+//          smaliesNumber=number
+//       }
+//          }
+//    return smaliesNumber;
+// }
+
+// console.log(findSmallesNumber([3, 8, 12, -2, 15])); // -2
+// console.log(findSmallesNumber([100, 54, 8, 12, 47])); // 8
+// console.log(findSmallesNumber([7, 21, 84, 15, 4])); // 4
+
+// Task 6
+
+/*
+ * Напиши функцию changeCase(string) которая заменяет регистр
+ * каждого символа в строке на противоположный.
+ * Например, если строка «JavaScript», то на выходе должена быть строка «jAVAsCRIPT».
+ */
+
+
+// const changeCase = function (string) {
+//    const letters = string.split('');
+//    console.log(letters);
+//    let invertedStr = '';
+//    for (const letter of letters) {
+//     invertedStr +=
+//         letter === letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase()
+//    }
+//    return invertedStr;
+// }
+
+// console.log(changeCase('qweRTY')); // QWErty
+// console.log(changeCase('mAnGo')); // MaNgO
+// console.log(changeCase('AjAx')); // aJaX
+
+// Task 7
+
+/*
+ * Напиши функцию slugify(string) которая получает строку и возвращает URL-slug
+ * Строка состоит только из букв и пробелов
+ */
+
+// const slugify = function (string) {
+//    return string.toLowerCase().split(' ').join('-')
+// }
+
+// console.log(slugify('Top 10 benefits of React framework'));
+// console.log(slugify('Azure Static Web Apps are Awesome'));
+// console.log(slugify('Technical writing tips for non-native English speakers'));
+
+// Task 8
+
+/*
+ * Псевдомассив arguments и Array.from и ...
+ */
+
+// const fn = function () {
+//    console.log(arguments);
+//    const args = Array.from(arguments);
+
+//   console.log(args);
+// };
+// fn(1, 2, 3, 4, 5, 6, 7)
+
+
+// const fn = function (...args) {
+   
+//   console.log(args);
+// };
+// fn(1, 2, 3, 4, 5, 6, 7)
+
+// Task 9
+
+/*
+ * Напиши функцию add для сложения произвольного количества аргументов (чисел)
+ * - Операция ... (rest)
+ */
+// const add = function (...args) {
+//    console.log(args);
+//    let total = 0;
+//    for (const arg of args) {
+//       total+= arg
+//    }
+//    return total
+// }
+// console.log(add(1, 2, 3));
+// console.log(add(1, 2, 4, 5, 6));
+
+// task 10
+
+/*
+ * Напиши функцию filterNumbers(array [, number1, ...]) которая:
+ * - первым аргументом принимает массив чисел
+ * - после первого аргумента может быть произвольное количество других аргументов которые будут числами.
+ * - Функция должна вернуть новый массив, в котором будут только те аргументы, начиная со второго,
+ *   для которых есть аналог в оригинальном массиве.
+ */
+
+const filterNumbers = function (array, ...args) { 
+
 }
 
 
-console.log(findLogin(logins, 'avocod3r'));
-console.log(findLogin(logins, 'k1widab3st'));
-console.log(findLogin(logins, 'jam4l'));
-console.log(findLogin(logins, 'poly1scute'));
+console.log(filterNumbers([1, 2, 3, 4, 5], 10, 15, 2, 3, 8)); // [2, 3]
+console.log(filterNumbers([10, 15, 25, 30], 23, 30, 18, 15)); // [30, 15]
+console.log(filterNumbers([100, 200, 300, 400, 500], 7, 12, 200, 64)); // [200]
