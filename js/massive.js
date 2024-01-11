@@ -266,6 +266,8 @@ const cart = [54, 28, 105, 70, 92, 17, 120,12,96];
 
 // console.table(cards);
 
+
+
 // Task 11
 
 //  Базові операції з масивом
@@ -277,10 +279,10 @@ const cart = [54, 28, 105, 70, 92, 17, 120,12,96];
 // Вставте «Country» та «Reggae» на початок масиву.
 // Методи push unshift shift splice
 
-const genres = ["Jazz", "Blues","Rock'n'roll"];
-genres.push("Rock'n'roll");
+// const genres = ["Jazz", "Blues","Rock'n'roll"];
+// genres.push("Rock'n'roll");
 
-console.log(genres[0]);
+// console.log(genres[0]);
 
 // const lastEl = genres[genres.length - 1];
 // console.log(lastEl);
@@ -292,6 +294,20 @@ console.log(genres[0]);
 // console.log(genres);
 
 
-genres.splice(0, 0, 'Country', 'Reggae');
+// genres.splice(0, 0, 'Country', 'Reggae');
 
-console.log(genres);
+// console.log(genres);
+
+
+
+// Task 12 - Масиви та рядки
+// Напиши скрипт для обчислення площі прямокутника зі сторонами, значення яких зберігаються в змінній величині у вигляді рядка. Значення гарантовано розділені пробілом.
+// Метод split
+
+const value = '8 11';
+const arr = value.split(' ');
+const firstValue = Number(arr[0]);
+// const secondValue = arr[1];
+const lastValue = arr[arr.length - 1];
+
+console.log(firstValue *lastValue);
