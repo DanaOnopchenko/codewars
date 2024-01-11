@@ -265,3 +265,33 @@ const cart = [54, 28, 105, 70, 92, 17, 120,12,96];
 // cards.splice(index,1,"updatecard")
 
 // console.table(cards);
+
+// Task 11
+
+//  Базові операції з масивом
+// Створіть масив genres з елементами Jazz і Blues.
+// Додайте "Rock'n'roll" в кінець.
+// Виведіть у консоль перший елемент масиву.
+// Виведіть у консоль останній елемент масиву. Код має працювати для масиву довільної довжини.
+// Видаліть перший елемент та виведіть його в консоль.
+// Вставте «Country» та «Reggae» на початок масиву.
+// Методи push unshift shift splice
+
+const genres = ["Jazz", "Blues","Rock'n'roll"];
+genres.push("Rock'n'roll");
+
+console.log(genres[0]);
+
+// const lastEl = genres[genres.length - 1];
+// console.log(lastEl);
+
+// const deletFstEl = genres.shift();
+// console.log(deletFstEl);
+
+// genres.unshift('Country', 'Reggae');
+// console.log(genres);
+
+
+genres.splice(0, 0, 'Country', 'Reggae');
+
+console.log(genres);
