@@ -310,8 +310,8 @@
 // console.log(removeCourse('Vue'))
 
 // const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'Node', 'Express'];
-// function updateCourse(oldName, newName) { 
-//     if (courses.includes(oldName)) { 
+// function updateCourse(oldName, newName) {
+//     if (courses.includes(oldName)) {
 //         const idx = courses.indexOf(oldName);
 //         //    courses.splice(idx,1,newName)===
 
@@ -325,3 +325,11 @@
 // console.log(courses);
 // // console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
 // console.log(updateCourse('Angular', 'NestJS')); //'Курс з такою назвою не знайдено'
+
+// const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'Node', 'Express'];
+// // var a;
+// // courses[0] = 'React'
+// for(let course of courses){
+// console.log(course);
+// }
+// console.log(courses);

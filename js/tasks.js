@@ -184,3 +184,28 @@
 //   return message;
 // };
 // console.log(peopleWithAgeDrink(19));
+
+// const fruits = ["apple", "plum", "pear", "orange"];
+
+// // Write your code under this line
+// fruits.splice(1, 1, "peach");
+// fruits.splice(3,1,"banana")
+// console.log(fruits);
+
+
+
+// const fruits = ["apple", "peach", "pear", "banana"];
+
+// // Change code below this line
+// const fruitsArrayLength = fruits.length;
+// console.log(fruitsArrayLength);
+
+const fruits = ["apple", "peach", "pear", "banana"];
+
+// Change code below this line
+
+const lastElementIndex = fruits.length -1;
+const lastElement = fruits[fruits.length - 1];
+
+console.log(lastElementIndex);
+console.log(lastElement);
