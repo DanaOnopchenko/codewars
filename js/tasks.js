@@ -200,12 +200,69 @@
 // const fruitsArrayLength = fruits.length;
 // console.log(fruitsArrayLength);
 
-const fruits = ["apple", "peach", "pear", "banana"];
 
-// Change code below this line
 
-const lastElementIndex = fruits.length -1;
-const lastElement = fruits[fruits.length - 1];
+// const fruits = ["apple", "peach", "pear", "banana"];
 
-console.log(lastElementIndex);
-console.log(lastElement);
+// // Change code below this line
+
+// const lastElementIndex = fruits.length -1;
+// const lastElement = fruits[lastElementIndex];
+
+// console.log(lastElementIndex);
+// console.log(lastElement);
+
+
+// function getExtremeElements(array) {
+//     // Change code below this line
+    
+//     array = [array[0], array[array.length - 1]];
+
+//     // const firstEl = array[0];
+//     // const lastEl = array[array.length - 1];
+//     // const newArray = [];
+//     // newArray.push(firstEl);
+//     // newArray.push(lastEl);
+//     // return newArray;
+//      return array
+//   // Change code above this line
+// }
+// console.log(getExtremeElements([1, 2, 3, 4, 5]));
+// console.log(getExtremeElements(["Earth", "Mars", "Venus"]));
+// console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));
+
+
+
+
+// function splitMessage(message, delimiter) {
+//   let words;
+//     // Change code below this line
+//     words = message.split(delimiter);
+//     // Change code above this line
+//   return words;
+// }
+// console.log(splitMessage("Mango hurries to the train", " "));
+// console.log(splitMessage("Mango", ""));
+// console.log(splitMessage("best_for_week", "_"));
+
+
+
+function calculateEngravingPrice(message, pricePerWord) {
+    // Change code below this line
+    let words = message.split(' ');
+    let totalPrice = 0;
+    for (let i = 0; i < words.length; i += 1) { 
+        totalPrice += pricePerWord;
+    }
+return totalPrice
+
+    }
+
+    // Change code above this line
+    
+
+
+console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
+console.log(calculateEngravingPrice("JavaScript is in my blood", 20));
+console.log(calculateEngravingPrice("Web-development is creative work", 40));
+console.log(calculateEngravingPrice("Web-development is creative work", 20));
