@@ -247,22 +247,102 @@
 
 
 
-function calculateEngravingPrice(message, pricePerWord) {
-    // Change code below this line
-    let words = message.split(' ');
-    let totalPrice = 0;
-    for (let i = 0; i < words.length; i += 1) { 
-        totalPrice += pricePerWord;
-    }
-return totalPrice
+// function calculateEngravingPrice(message, pricePerWord) {
+//     // Change code below this line
+//     let words = message.split(' ');
+//     let totalPrice = 0;
+//     for (let i = 0; i < words.length; i += 1) {
+//         totalPrice += pricePerWord;
+//     }
+// return totalPrice
 
-    }
+//     }
 
     // Change code above this line
     
 
 
-console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
-console.log(calculateEngravingPrice("JavaScript is in my blood", 20));
-console.log(calculateEngravingPrice("Web-development is creative work", 40));
-console.log(calculateEngravingPrice("Web-development is creative work", 20));
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 20));
+// console.log(calculateEngravingPrice("Web-development is creative work", 40));
+// console.log(calculateEngravingPrice("Web-development is creative work", 20));
+
+
+
+// function makeStringFromArray(array, delimiter) {
+//   let string;
+//   // Change code below this line
+//     string = array.splice(delimiter).join(delimiter);
+
+
+//   // Change code above this line
+//   return string;
+// }
+// console.log(makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " "));
+// console.log(makeStringFromArray(["M", "a", "n", "g", "o"], ""));
+// console.log(makeStringFromArray(["top", "picks", "for", "you"], "_"));
+
+
+// function slugify(title) {
+//   // Change code below this line
+
+//     let string = title.toLocaleLowerCase().split(' ').join('-');
+//        return string
+
+//     // Change code above this line
+   
+// }
+// console.log(slugify("Arrays for begginers"));
+// console.log(slugify("English for developer"));
+// console.log(slugify("Ten secrets of JavaScript"));
+// console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"));
+ 
+
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1,4);
+// const lastThreeEls =fruits.slice(-3) ;
+
+
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+
+// const allClients = oldClients.concat(newClients); // Change this line
+
+// console.log(allClients);
+
+
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//     // Change code below this line
+// const newArray = firstArray.concat(secondArray).slice(0,maxLength)
+//     return newArray;
+
+//     // Change code above this line
+// }
+  
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
+// console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4));
+// console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0));
+
+
+
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <= end; i += 1) { // Change this line
+//   console.log(i);
+// }
+
+function calculateTotal(number) {
+ // Change code below this line
+
+
+
+  // Change code above this line
+}
